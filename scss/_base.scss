@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+
+body{
+	margin:40px;
+	
+	font-family: 'Londrina Outline', cursive;
+	//background:url(../img/bg.png);
+	background-color:#A68FA0;
+}
+
+/* h1,p{
+	position: relative;
+	//border: solid 1px black;
+	max-height:250px;
+	max-width:250px;
+	padding:20px;
+} */
+
+h1{
+	font-weight: bold;
+	text-align:center;
+	font-size:3em;
+	color:#3C293A;
+}
+
+p{
+	font-size:1.5em;
+	text-align:center;
+	color:#040F1A;
+	font-family: 'Raleway', sans-serif;
+}
+
+header,main{
+	position: relative;
+	//border: solid 1px black;
+	//min-height:250px;
+	//max-width:250px;
+	padding:20px;
+} 
+
+header{
+	grid-area:header;
+
+}
+
+main{
+	grid-area:content;
+	background:rgba(2,64,89,0.5);
+}
+
+.border{
+	width:100%;
+}
+
+@media screen and (max-width: 600px){
+	h1{
+		font-size:2em;
+	}
+}
+
+@media screen and (max-width:375px){
+	h1{
+		font-size:1.5em;
+	}
+}

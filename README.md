@@ -1,0 +1,2 @@
+#Google Analytics Message
+This project was to make a web page using grids with a message that we want to get out to the world. We are to incorporate Google Analytics so that we can see who visits our webpage. The goal is to see how many people from all over the world we can get to look at the webpage.

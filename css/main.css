@@ -6,6 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Londrina+Outline");
 html {
   line-height: 1.15;
   /* 1 */
@@ -518,6 +520,75 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  margin: 40px;
+  font-family: 'Londrina Outline', cursive;
+  background-color: #A68FA0;
+}
+
+/* h1,p{
+	position: relative;
+	//border: solid 1px black;
+	max-height:250px;
+	max-width:250px;
+	padding:20px;
+} */
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em;
+  color: #3C293A;
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+  color: #040F1A;
+  font-family: 'Raleway', sans-serif;
+}
+
+header, main {
+  position: relative;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: content;
+  background: rgba(2, 64, 89, 0.5);
+}
+
+.border {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.site {
+  display: grid;
+  grid-template-columns: 1fr 550px 1fr;
+  grid-template-rows: 200px 1fr 1fr;
+  justify-items: center;
+  grid-template-areas: ". header ." ". content ." ". content .";
+}
+
+@media screen and (max-width: 600px) {
+  .site {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "content" "content";
+  }
+}
 /*
  * Hide visually and from screen readers
  */
